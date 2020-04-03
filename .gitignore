@@ -4,3 +4,7 @@ NeatMouseWtl/Debug/
 NeatMouseWtl/Release/
 NeatMouseWtl/NeatMouseWtl.aps
 NeatMouseWtl/NeatMouseWtl.vcxproj.user
+*.db
+/[misc]/Output
+/[misc]/Output
+/[misc]/Output/neatmouse-1.05.004-setup-x64.exe
