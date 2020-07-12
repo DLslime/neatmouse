@@ -25,6 +25,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // LANG
 //
 
+IDR_LANG_CHINESESIMPLIFIED LANG                    "res\\langs\\Chinese Simplified.lng"
+
 IDR_LANG_ENGLISH        LANG                    "res\\langs\\English.lng"
 
 IDR_LANG_FRENCH         LANG                    "res\\langs\\French.lng"
@@ -56,6 +58,8 @@ IDB_PNG_DISK            PNG                     "res\\png\\disk.png"
 IDB_PNG_PLUS            PNG                     "res\\png\\plus.png"
 
 IDB_PNG_QUESTION        PNG                     "res\\png\\question.png"
+
+IDB_PNG_LANG_CN         PNG                     "res\\png\\lang\\cn.png"
 
 IDB_PNG_LANG_DE         PNG                     "res\\png\\lang\\de.png"
 
@@ -174,6 +178,7 @@ IDR_MAINFRAME MENU
 BEGIN
     POPUP "Language"
     BEGIN
+        MENUITEM "简体中文",                        ID_LANGUAGE_CN
         MENUITEM "Deutsch",                     ID_LANGUAGE_DE
         MENUITEM "Ελληνικά",                    ID_LANGUAGE_GR
         MENUITEM "English",                     ID_LANGUAGE_EN
@@ -339,8 +344,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,5,0,4
- PRODUCTVERSION 1,5,0,4
+ FILEVERSION 1,5,0,5
+ PRODUCTVERSION 1,5,0,5
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -357,12 +362,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "Neat Decisions"
             VALUE "FileDescription", "NeatMouse - neat mouse emulator"
-            VALUE "FileVersion", "1.5.0.4"
+            VALUE "FileVersion", "1.5.0.5"
             VALUE "InternalName", "NeatMouse"
             VALUE "LegalCopyright", "Copyright 2020"
             VALUE "OriginalFilename", "NeatMouse.exe"
             VALUE "ProductName", "NeatMouse"
-            VALUE "ProductVersion", "1.5.0.4"
+            VALUE "ProductVersion", "1.5.0.5"
         END
     END
     BLOCK "VarFileInfo"
